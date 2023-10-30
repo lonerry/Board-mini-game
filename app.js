@@ -5,16 +5,12 @@ for (let i = 0; i < SquaresNumbers;i++){
     const square = document.createElement('div')
     square.classList.add('square')
 
-    square.addEventListener('mouseover',()=>{
-        setColor(square)
-    })
-    square.addEventListener('touchmove',()=>{
+   
+    square.addEventListener('touchstart',()=>{
         setColor(square)
     })
 
-    square.addEventListener('mouseleave',()=>{
-        removeColor(square)
-    })
+  
     square.addEventListener('touchend',()=>{
         removeColor(square)
     })
@@ -38,7 +34,6 @@ function getRandomColor() {
    return colors[index]
 
 }
-
 
 
 
