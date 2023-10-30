@@ -13,6 +13,15 @@ for (let i = 0; i < SquaresNumbers;i++){
         removeColor(square)
     })
 
+    square.addEventListener('touchstart', ()=> {
+        setColor(square)
+    })
+    
+    square.addEventListener('touchstart', ()=> {
+        removeColor(square)
+    })
+
+
 
     board.append(square)
 
@@ -31,3 +40,7 @@ function getRandomColor() {
    return colors[index]
 
 }
+
+
+
+
