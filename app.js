@@ -8,19 +8,17 @@ for (let i = 0; i < SquaresNumbers;i++){
     square.addEventListener('mouseover',()=>{
         setColor(square)
     })
+    square.addEventListener('touchmove',()=>{
+        setColor(square)
+    })
 
     square.addEventListener('mouseleave',()=>{
         removeColor(square)
     })
-
-    square.addEventListener('touchstart', ()=> {
-        setColor(square)
-    })
-    
-    square.addEventListener('touchstart', ()=> {
+    square.addEventListener('touchend',()=>{
         removeColor(square)
     })
-
+    
 
 
     board.append(square)
@@ -40,6 +38,7 @@ function getRandomColor() {
    return colors[index]
 
 }
+
 
 
 
